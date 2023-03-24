@@ -4,42 +4,42 @@ import java.util.Scanner;
 
 public class Calculator {
 
-    public static int Add(int a, int b) {
+    public static int add(int a, int b) {
         return a + b;
     }
 
-    public static double Add(double a, double b) {
+    public static double add(double a, double b) {
         return a + b;
     }
 
-//    public static int Subtract(int a, int b) {
+//    public static int subtract(int a, int b) {
 //        return a - b;
 //    }
 
-    public static double Subtract(double a, double b) {
+    public static double subtract(double a, double b) {
         return a - b;
     }
 
-//    public static int Multiply(int a, int b) {
+//    public static int multiply(int a, int b) {
 //        return a * b;
 //    }
 
-    public static double Multiply(double a, double b) {
+    public static double multiply(double a, double b) {
         return a * b;
     }
 
-    public static double Divide(double a, double b) {
+    public static double divide(double a, double b) {
         return a / b;
     }
 
-    public static void RunCalc() {
+    public static void runCalc() {
         boolean isOn = true;
         while (isOn) {
             Scanner scanner = new Scanner(System.in);
 
             System.out.print("Enter your exercise, can be used only one operation (e.g. 1 + 2): ");
             String calc = scanner.nextLine();
-            System.out.println("Your result is: " + Converter(calc));
+            System.out.println("Your result is: " + converter(calc));
             System.out.print("\nDo you want to continue? (Yes / No): ");
             String flag = scanner.next();
 
@@ -49,7 +49,7 @@ public class Calculator {
         }
     }
 
-    public static double Converter(String text) {
+    public static double converter(String text) {
 
         String convertedText = text.replace(" ", "");
         char[] regex = {'*', '/', '+', '-'};
@@ -84,7 +84,7 @@ public class Calculator {
             dSecondNumber = Integer.parseInt(num2);
         }
 
-        return Function(operator, dFirstNumber, dSecondNumber);
+        return function(operator, dFirstNumber, dSecondNumber);
     }
 
     public static boolean checkIfContainsDotOrComma(String text) {
@@ -94,21 +94,21 @@ public class Calculator {
         return false;
     }
 
-    public static double Function(String operator, double a, double b) {
+    public static double function(String operator, double a, double b) {
         double sum = 0;
 
         switch (operator) {
             case "+":
-                sum += Add(a, b);
+                sum += add(a, b);
                 break;
             case "-":
-                sum += Subtract(a, b);
+                sum += subtract(a, b);
                 break;
             case "*":
-                sum += Multiply(a, b);
+                sum += multiply(a, b);
                 break;
             case "/":
-                sum += Divide(a, b);
+                sum += divide(a, b);
                 break;
             default:
                 sum += 0;
@@ -119,7 +119,7 @@ public class Calculator {
 
     public static void main(String[] args) {
 
-        RunCalc();
+        runCalc();
     }
 
 }
