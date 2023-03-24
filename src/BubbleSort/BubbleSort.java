@@ -3,7 +3,7 @@ package BubbleSort;
 import java.util.Arrays;
 
 public class BubbleSort {
-    public static int[] Sort(int[] numbers) {
+    public static int[] sort(int[] numbers) {
 
         if (numbers == null)
             return new int[]{0};
@@ -29,7 +29,7 @@ public class BubbleSort {
 //        int[] empty = {};
         System.out.println("Unsorted array: " + Arrays.toString(nums));
 
-        int[] res = Sort(nums);
+        int[] res = sort(nums);
         System.out.println("Sorted array: " + Arrays.toString(res));
 
     }

@@ -41,6 +41,9 @@ public class Palindrome {
 //                SNIPPET 2
 //        By using for loop
     public static boolean isPalindrome(String text){
+        if (text == null)
+            return false;
+
         String result = "";
 
         for (int i = text.length() - 1; i >= 0; i--) {
