@@ -1,4 +1,4 @@
-package SOLID_Calculator;
+package solid_calculator;
 
 public class Main {
     public static void main(String[] args) {

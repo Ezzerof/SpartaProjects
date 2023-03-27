@@ -1,12 +1,12 @@
-package SOLID_Calculator;
+package solid_calculator;
 
-public class Multiplication implements CalculatorOperation{
+public class Division implements CalculatorOperation{
     private double num1;
     private double num2;
     private double result;
     @Override
     public void operation() {
-        result = num1 * num2;
+        result = num1 / num2;
     }
 
     public double getResult() {

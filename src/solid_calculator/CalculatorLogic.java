@@ -1,4 +1,4 @@
-package SOLID_Calculator;
+package solid_calculator;
 
 public interface CalculatorLogic {
 

@@ -1,4 +1,4 @@
-package Calculator;
+package calculator;
 
 import java.util.Scanner;
 
@@ -114,12 +114,6 @@ public class Calculator {
                 sum += 0;
         }
         return sum;
-    }
-
-
-    public static void main(String[] args) {
-
-        runCalc();
     }
 
 }

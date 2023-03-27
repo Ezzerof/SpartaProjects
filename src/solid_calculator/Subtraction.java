@@ -1,4 +1,4 @@
-package SOLID_Calculator;
+package solid_calculator;
 
 public class Subtraction implements CalculatorOperation {
     private double num1;
