@@ -2,20 +2,20 @@
 ### These projects have been done during training.
 
 ## Table of contents
-* [palindrome](#palindrome)
+* [Palindrome](#palindrome)
 * [Bubble Sorter](#bubble-sorter)
-* [calculator](#calculator)
+* [Calculator](#calculator)
 * [SOLID calculator](#solid-calculator)
 * [Technologies](#technologies)
 * [Setup](#setup)
 
-## palindrome
+## Palindrome
 A palindrome is a word, number, phrase, or other sequence of symbols that reads the same backwards as forwards. 
 
 ## Bubble Sorter
 Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order.
 
-## calculator
+## Calculator
 Basic calculator done by overloading methods
 
 ## SOLID calculator
